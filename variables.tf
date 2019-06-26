@@ -31,3 +31,7 @@ variable "lifecycle_rule" {
   type    = "list"
   default = []
 }
+
+variable "create_bucket" {
+  default = false
+}

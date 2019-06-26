@@ -1,4 +1,5 @@
 resource "alicloud_oss_bucket" "create_new_bucket" {
+  count            = "${var.create_bucket}"
   bucket           = "${var.bucket_name}"
   acl              = "${var.acl}"
   website          = "${var.website}"
